@@ -1,0 +1,115 @@
+/* google fonts */
+/* font-family: "Young Serif", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Figtree&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins&family=Young+Serif&display=swap');
+
+/*  font-family: "Outfit", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Figtree&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Poppins&family=Young+Serif&display=swap');
+
+/* CSS reset propertity */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Stone100: hsl(30, 54%, 90%);
+    --Stone150: hsl(30, 18%, 87%);
+    --Stone600: hsl(30, 10%, 34%);
+    --Stone900: hsl(24, 5%, 18%);
+    --Brown800: hsl(14, 45%, 36%);
+    --Rose800: hsl(332, 51%, 32%);
+    --Rose50: hsl(330, 100%, 98%);
+}
+body{
+    background-color: var(--Rose50);
+}
+main{
+    margin:60px auto;
+    border-radius: 20px;
+    font-family: "Outfit", sans-serif;
+    width: 550px;
+    background-color:var(--White);
+    padding: 20px;
+}
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+h1,h2{
+    font-family: "Young Serif", serif; 
+}
+h1{
+    font-size: 28px;
+    margin: 10px 0;
+}
+p{
+    font-size: 16px;
+    line-height: 1.5em;
+    color: var(--Stone600);
+}
+h2{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--Brown800);
+    margin: 30px 0 10px;
+}
+li>span{
+    font-weight: bold;
+    color: var(--Stone900);
+}
+::marker
+{
+    color: var(--Brown800)
+}
+li{
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-top: 10px;
+    margin-left: 25px;
+    color: var(--Stone600);
+}
+main ul:first-of-type{
+    background-color: var(--Rose50);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    h3{
+        font-size: 20px;
+        color: var(--Rose800);
+        margin-bottom: 10px;
+    }
+    ::marker{
+    color: var(--Rose800);
+        }
+}
+main ul:nth-of-type(2), main ol:first-of-type{
+    padding-bottom: 20px;
+   border-bottom:2px solid var(--Stone150); 
+}
+table{
+    width: 100%;
+    font-size: 18px;
+    margin: 20px 10px;
+    border-spacing: 0;
+}
+tr td:first-child{
+    color:var(--Stone600);
+}
+tr td:last-child{
+    color:var(--Brown800);
+    font-weight: 600;
+}
+td{
+    border-bottom: 1px solid var(--Stone150);
+    padding: 15px;
+}
+tr:last-child td{
+    border: none;
+    padding-bottom: 0;
+}
+@media screen and (max-width:650px) {
+    main{
+        width:90%;
+    }
+}
